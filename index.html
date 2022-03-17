@@ -1,11 +1,63 @@
 <!DOCTYPE html>
+<!-- home page-->
 <html lang="es">
   <head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Maracay Game Jam</title>
+	  <title id="title"></title>
+	  <script type="text/javascript" src="commons/js/routes-util-builder.js"></script>
+	  <script type="text/javascript" src="commons/js/strings.js"></script>
+	  <script type="text/javascript" src="commons/js/routes.js"></script>
+	  <script type="text/javascript" src="commons/js/images.js"></script>
+	  <script type="text/javascript" src="home/js/strings.js"></script>
   </head>
   <body>
-    <H1>En construcción.</H1>
+    
+	<H1>En construcción.</H1>
+	<img id="logo_image" width="250" height="250"/>
+	<H3>Para más información puede visitar: </H3>
+    <br>
+		<a id="facebook_link" href="url">
+			<img id="facebook_image" width="80" height="80"/>
+		</a>
+		<a id="twitter_link" href="url">
+			<img id="twitter_image" width="80" height="80"/>
+		</a>
+		<a id="instagram_link" href="url">
+			<img id="instagram_image" width="80" height="80"/>
+		</a>
+		<a id="youtube_link" href="url">
+			<img id="youtube_image" width="80" height="80"/>
+		</a>
+  	</br>
+
+	<H3>O contactar a nuestro correo electrónico: </H3>
+    <H3 id="email"></H3>
+    
+
+    <script>
+		
+		const myCommmonRoutes = loadMyRoutes("");
+		const myImagesRoutes = loadMyImagesRoutes("");
+		
+		document.getElementById("title").innerHTML =  HOME_STRINGS.homeTitle;	
+		
+		document.getElementById("logo_image").src = myImagesRoutes.logoTransparent;
+
+		document.getElementById("facebook_link").href = myCommmonRoutes.facebook;
+		document.getElementById("facebook_image").src = myImagesRoutes.facebook;   
+		
+		document.getElementById("twitter_link").href = myCommmonRoutes.twitter;
+		document.getElementById("twitter_image").src = myImagesRoutes.twitter; 
+
+		document.getElementById("instagram_link").href = myCommmonRoutes.instagram;
+		document.getElementById("instagram_image").src = myImagesRoutes.instagram; 
+		
+		document.getElementById("youtube_link").href = myCommmonRoutes.youtube;
+		document.getElementById("youtube_image").src = myImagesRoutes.youtube;
+		
+		document.getElementById("email").innerHTML= myCommmonRoutes.email; 
+		
+	</script>
   </body>
 </html>
