@@ -31,7 +31,7 @@ El proceso de hacer un pull request se puede resumir en los siguientes pasos:
 - Hacer un clone del fork en tu computador.
 - Configurar tus datos básicos en el clone.
 - Crear una rama desde la rama develop.
-- Añadir en la carpeta correspondiente, los archivos que quieres enviar.
+- Añadir los archivos correspondientes a tu contribución.
 - Indicarle a git, cuales son los archivos que debe trackear.
 - Guardar los cambios en git mediante un commit.
 - Sincronizar el fork en Github con un push.
