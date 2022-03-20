@@ -1,5 +1,6 @@
 # maracaygamejam.github.io
 Este es el repositorio que contiene los archivo de la página web de Maracay Game Jam.
+Este repositorio toma en cuenta los patrones seguido en la siguiente [plantilla](https://github.com/kevinesaa/simple-html-template)
 
 Maracay Game Jam es un evento anual sin fines de lucro, que forma parte del Global Game Jam, uno de los eventos más grande de su tipo, dónde participantes de todo el mundo en alrededor de 750 ciudades, se reúnen y hacen juegos simultáneamente durante el último fin de semana de enero, es decir, en 48 horas que se cuentan a partir del Viernes a las 05:00 pm en la hora local de cada ciudad, todo ello partiendo desde una temática común que se revela al inicio del evento.
 
