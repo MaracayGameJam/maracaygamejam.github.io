@@ -10,6 +10,7 @@
 	  <script type="text/javascript" src="commons/js/routes.js"></script>
 	  <script type="text/javascript" src="commons/js/images.js"></script>
 	  <script type="text/javascript" src="home/js/strings.js"></script>
+	  <script type="text/javascript" src="home/js/referencesIds.js"></script>
   </head>
   <body>
     
@@ -34,29 +35,28 @@
 	<H3>O contactar a nuestro correo electrónico: </H3>
     <H3 id="email"></H3>
     
-
     <script>
 		
 		const myCommmonRoutes = loadMyRoutes("");
 		const myImagesRoutes = loadMyImagesRoutes("");
 		
-		document.getElementById("title").innerHTML =  HOME_STRINGS.homeTitle;	
+		document.getElementById(REFERENCE_ID.homeTitle).innerHTML =  HOME_STRINGS.homeTitle;	
 		
-		document.getElementById("logo_image").src = myImagesRoutes.logoTransparent;
+		document.getElementById(REFERENCE_ID.logoIcon).src = myImagesRoutes.logoTransparent;
 
-		document.getElementById("facebook_link").href = myCommmonRoutes.facebook;
-		document.getElementById("facebook_image").src = myImagesRoutes.facebook;   
+		document.getElementById(REFERENCE_ID.facebookHref).href = myCommmonRoutes.facebook;
+		document.getElementById(REFERENCE_ID.facebookImageIcon).src = myImagesRoutes.facebook;   
 		
-		document.getElementById("twitter_link").href = myCommmonRoutes.twitter;
-		document.getElementById("twitter_image").src = myImagesRoutes.twitter; 
+		document.getElementById(REFERENCE_ID.twitterHref).href = myCommmonRoutes.twitter;
+		document.getElementById(REFERENCE_ID.twitterImageIcon).src = myImagesRoutes.twitter; 
 
-		document.getElementById("instagram_link").href = myCommmonRoutes.instagram;
-		document.getElementById("instagram_image").src = myImagesRoutes.instagram; 
+		document.getElementById(REFERENCE_ID.instagramHref).href = myCommmonRoutes.instagram;
+		document.getElementById(REFERENCE_ID.instagramImageIcon).src = myImagesRoutes.instagram; 
 		
-		document.getElementById("youtube_link").href = myCommmonRoutes.youtube;
-		document.getElementById("youtube_image").src = myImagesRoutes.youtube;
+		document.getElementById(REFERENCE_ID.youtubeHref).href = myCommmonRoutes.youtube;
+		document.getElementById(REFERENCE_ID.youtubeImageIcon).src = myImagesRoutes.youtube;
 		
-		document.getElementById("email").innerHTML= myCommmonRoutes.email; 
+		document.getElementById(REFERENCE_ID.emailTextRef).innerHTML= myCommmonRoutes.email; 
 		
 	</script>
   </body>
