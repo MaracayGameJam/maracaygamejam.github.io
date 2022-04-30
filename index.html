@@ -4,7 +4,11 @@
   <head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="keywords" content="global game jam, software, videojuegos, gamedev, maracay, aragua">
+	  <meta name="description" content="conecta con el mundo y desarrolla tu propio juego en 48 horas">
+
 	  <title id="title"></title>
+	  
 	  <script type="text/javascript" src="commons/js/routes-util-builder.js"></script>
 	  <script type="text/javascript" src="commons/js/strings.js"></script>
 	  <script type="text/javascript" src="commons/js/routes.js"></script>
@@ -13,10 +17,10 @@
 	  <script type="text/javascript" src="home/js/referencesIds.js"></script>
   </head>
   <body>
-    
-	<H1>En construcción.</H1>
+	<h1 id="home_h1"></h1>
+	<h2>En construcción.</h2>
 	<img id="logo_image" width="250" height="250"/>
-	<H3>Para más información puede visitar: </H3>
+	<h3>Para más información puede visitar: </H]h3>
     <br>
 		<a id="facebook_link" href="url">
 			<img id="facebook_image" width="80" height="80"/>
@@ -32,15 +36,20 @@
 		</a>
   	</br>
 
-	<H3>O contactar a nuestro correo electrónico: </H3>
-    <H3 id="email"></H3>
+	<h3>O contactar a nuestro correo electrónico: </h3>
+    <h3 id="email"></h3>
     
+	<script  type="text/javascript" src="main.js">
+
+	</script>
+
     <script>
 		
 		const myCommmonRoutes = loadMyRoutes("");
 		const myImagesRoutes = loadMyImagesRoutes("");
 		
-		document.getElementById(REFERENCE_ID.homeTitle).innerHTML =  HOME_STRINGS.homeTitle;	
+		document.getElementById("home_h1").innerHTML =  HOME_STRINGS.homeTitle;
+		document.getElementById(REFERENCE_ID.homeTitle).innerHTML =  HOME_STRINGS.homeTitle;
 		
 		document.getElementById(REFERENCE_ID.logoIcon).src = myImagesRoutes.logoTransparent;
 
